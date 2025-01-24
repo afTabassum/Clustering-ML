@@ -31,20 +31,20 @@ def main():
     st.title('HELP International Foundation')
     st.subheader('This application helps to classify the country on the basis of Socio-Economic and health factors')
     cld_mor = st.text_input('Enter Child Mortality Rate')
-    life_exp = st.text_input('Enter Average Life Expectancy')
-    tol_fer = st.text_input('Enter Total Fertility Rate')
-    health = st.text_input('Enter the GDP spent on health')
     export = st.text_input('Enter the GDP spent on Exports')
+    health = st.text_input('Enter the GDP spent on health')
     impor = st.text_input('Enter the GDP spent on Imports')
-    gdp = st.text_input('Enter GDP per population')
     income = st.text_input('Enter the Income per person')
     infl = st.text_input('Enter the Inflation Rate')
+    life_exp = st.text_input('Enter Average Life Expectancy')
+    tol_fer = st.text_input('Enter Total Fertility Rate')
+    gdp = st.text_input('Enter GDP per population')
 
     imp_list= [[cld_mor, export, health, impor, income, infl, life_exp, tol_fer, gdp]]
 
     if st.button('Perdict'):
-        reponse = prediction(inp_list)
-        st.success(reponce)
+        response = prediction(inp_list)
+        st.success(response)
 
 if __name__ == '__main__':
     main()
