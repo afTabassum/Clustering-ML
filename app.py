@@ -40,7 +40,7 @@ def main():
     tol_fer = st.text_input('Enter Total Fertility Rate')
     gdp = st.text_input('Enter GDP per population')
 
-    imp_list= [[cld_mor, export, health, impor, income, infl, life_exp, tol_fer, gdp]]
+    inp_list= [[cld_mor, export, health, impor, income, infl, life_exp, tol_fer, gdp]]
 
     if st.button('Perdict'):
         response = prediction(inp_list)
